@@ -1,5 +1,8 @@
 package com.epam.javaschool.shefer.chapter2.task6;
 
+import com.epam.javaschool.shefer.chapter2.task7.Technic;
+
+@Technic(type = "nuclear")
 public class NuclearBoat {
 
     public static void main(String[] args) {
