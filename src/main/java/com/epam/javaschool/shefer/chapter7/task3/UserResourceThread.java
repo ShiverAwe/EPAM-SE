@@ -1,7 +1,5 @@
 package com.epam.javaschool.shefer.chapter7.task3;
 
-import java.util.Random;
-
 public class UserResourceThread {
     public static void main(String[] args) throws InterruptedException {
         SharedResource res = new SharedResource();
@@ -18,7 +16,7 @@ public class UserResourceThread {
         t4.start();
         t5.start();
 
-        Thread.sleep(100);
+        Thread.sleep(1000000);
 
         t1.stopThread();
         t2.stopThread();

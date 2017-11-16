@@ -15,9 +15,15 @@ public class SharedResource {
     }
 
     public Integer getELement() {
-        if (list.size() > 0) {
+        if (elementsAvailable()) {
             return list.remove(0);
-        }
+        } else if ()
         return null;
+    }
+
+    public Boolean elementsAvailable(){
+        synchronized (list) {
+            return (list.size() > 0);
+        }
     }
 }
