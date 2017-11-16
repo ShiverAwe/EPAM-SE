@@ -17,7 +17,7 @@ public class SharedResource {
     public Integer getELement() {
         if (elementsAvailable()) {
             return list.remove(0);
-        } else if ()
+        }
         return null;
     }
 
